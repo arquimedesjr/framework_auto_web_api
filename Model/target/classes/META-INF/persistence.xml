@@ -1,0 +1,51 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+      http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="persistence">
+
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		<properties>
+
+			<!-- dados da conexao -->
+
+			<!-- SQL Server -->
+
+
+		<!--<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url"	value="jdbc:sqlserver://10.1.10.6;databaseName= " />
+			<property name="javax.persistence.jdbc.user" value=" " />
+			<property name="javax.persistence.jdbc.password" value=" " />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" /> -->
+
+			<!-- MYSQL -->
+
+				<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> 
+				<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Model?createDatabaseIfNotExist=true"/> 
+				<property name="javax.persistence.jdbc.user" value="root"/> 
+				<property name="javax.persistence.jdbc.password" value="123456"/> 
+				<property name="hibernate.show_sql" value="true" /> 
+				<property name="hibernate.format_sql" value="true" /> 
+				<property name="hibernate.hbm2ddl.auto" value="update" /> 
+				<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+
+			<!-- POSTGRESLQ -->
+
+			<!-- <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" 
+				/> <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Hercules?createDatabaseIfNotExist=true" 
+				/> <property name="javax.persistence.jdbc.user" value="postgres" /> <property 
+				name="javax.persistence.jdbc.password" value="1234" /> <property name="hibernate.dialect" 
+				value="org.hibernate.dialect.PostgreSQLDialect" /> <property name="hibernate.show_sql" 
+				value="true" /> <property name="hibernate.format_sql" value="true" /> <property 
+				name="hibernate.hbm2ddl.auto" value="update" /> -->
+
+		</properties>
+	</persistence-unit>
+
+</persistence>
